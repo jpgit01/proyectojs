@@ -1,23 +1,26 @@
-precio = 500000;
-cantidad = 0;
-total = 0;
+let precio = 500000;
+let cantidad = 0;
+let total = 0;
 
-precioSpan = document.querySelector(".precio-inicial");
-cantidadSpan = document.querySelector(".cantidad");
-totalSpan = document.querySelector(".valor-total");
+let precioSpan = document.querySelector(".precio-inicial");
+let cantidadSpan = document.querySelector(".cantidad");
+let totalSpan = document.querySelector(".valor-total");
 
 precioSpan.innerHTML = precio;
 cantidadSpan.innerHTML = cantidad;
 totalSpan.innerHTML = total;
-
-btnSuma = document.querySelector("#suma");
-btnResta = document.querySelector("#resta");
 
 function suma(){
     cantidad++;
     total = cantidad * precio;
     cantidadSpan.innerHTML = cantidad;
     totalSpan.innerHTML = total;
+    if(total < 0){
+        cantidad = 1;
+        total = cantidad * precio;
+        cantidadSpan.innerHTML = cantidad;
+        totalSpan.innerHTML = total;
+    }
 }
 
 function resta(){
