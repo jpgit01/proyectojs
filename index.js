@@ -9,3 +9,6 @@ totalSpan = document.querySelector(".valor-total");
 precioSpan.innerHTML = precio;
 cantidadSpan.innerHTML = cantidad;
 totalSpan.innerHTML = total;
+
+btnSuma = document.querySelector("#suma");
+btnResta = document.querySelector("#resta");
