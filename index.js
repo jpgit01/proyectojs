@@ -25,5 +25,8 @@ function resta(){
     total = cantidad * precio;
     cantidadSpan.innerHTML = cantidad;
     totalSpan.innerHTML = total;
-
+    if(total < 0){
+        cantidadSpan.innerHTML = 0;
+        totalSpan.innerHTML = 0;
+    }
 }
