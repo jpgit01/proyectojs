@@ -15,10 +15,15 @@ btnResta = document.querySelector("#resta");
 
 function suma(){
     cantidad++;
+    total = cantidad * precio;
     cantidadSpan.innerHTML = cantidad;
+    totalSpan.innerHTML = total;
 }
 
 function resta(){
     cantidad--;
+    total = cantidad * precio;
     cantidadSpan.innerHTML = cantidad;
+    totalSpan.innerHTML = total;
+
 }
