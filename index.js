@@ -12,3 +12,13 @@ totalSpan.innerHTML = total;
 
 btnSuma = document.querySelector("#suma");
 btnResta = document.querySelector("#resta");
+
+function suma(){
+    cantidad++;
+    cantidadSpan.innerHTML = cantidad;
+}
+
+function resta(){
+    cantidad--;
+    cantidadSpan.innerHTML = cantidad;
+}
